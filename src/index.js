@@ -5,7 +5,9 @@ import ReactDOM from 'react-dom';
 
 // import App from './01-getting-start/01-nest.jsx';
 // import App from './01-getting-start/02-class-style.jsx';
-import App from './01-getting-start/03-styled-component.jsx';
+// import App from './01-getting-start/03-styled-component.jsx';
+// import App from './02-state-props/01-data-mount.jsx';
+import App from './02-state-props/04-state.jsx';
 
 // const app = <div>hello react!</div>;
 //! 函数组件
