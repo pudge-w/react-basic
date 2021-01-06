@@ -12,7 +12,12 @@ import ReactDOM from 'react-dom';
 // import App from './03-setState/02-state-up/App.jsx';
 // import App from './03-setState/03-controled.jsx';
 // import App from './03-setState/04-data-render.jsx';
-import App from './04-event/01-event.jsx';
+// import App from './04-event/01-event.jsx';
+// import App from './05-form/01-form.jsx';
+// import App from './05-form/02-multiple.jsx';
+// import App from './05-form/03-manyInput.jsx';
+// import App from './05-form/04-notControl.jsx';
+import App from './05-form/05-file.jsx';
 
 
 // const app = <div>hello react!</div>;
