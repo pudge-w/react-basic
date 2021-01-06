@@ -7,7 +7,10 @@ import ReactDOM from 'react-dom';
 // import App from './01-getting-start/02-class-style.jsx';
 // import App from './01-getting-start/03-styled-component.jsx';
 // import App from './02-state-props/01-data-mount.jsx';
-import App from './02-state-props/04-state.jsx';
+// import App from './02-state-props/04-state.jsx';
+// import App from './03-setState/01-setstate.jsx';
+import App from './03-setState/02-state-up/App.jsx';
+
 
 // const app = <div>hello react!</div>;
 //! 函数组件
