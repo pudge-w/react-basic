@@ -10,7 +10,8 @@ class App extends Component {
     super();
     this.state = {
       msg: 'hello react!',
-      isShow: true
+      isShow: true,
+      count: 3
     }
   };
 
@@ -57,6 +58,11 @@ class App extends Component {
       isShow: !this.state.isShow
     })
     console.log(this.state.isShow);
+
+    // this.setState({
+    //   count: ++this.state.count
+    // })
+    // console.log(this.state.count);
   };
 
   render() {

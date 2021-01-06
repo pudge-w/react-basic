@@ -9,7 +9,10 @@ import ReactDOM from 'react-dom';
 // import App from './02-state-props/01-data-mount.jsx';
 // import App from './02-state-props/04-state.jsx';
 // import App from './03-setState/01-setstate.jsx';
-import App from './03-setState/02-state-up/App.jsx';
+// import App from './03-setState/02-state-up/App.jsx';
+// import App from './03-setState/03-controled.jsx';
+// import App from './03-setState/04-data-render.jsx';
+import App from './04-event/01-event.jsx';
 
 
 // const app = <div>hello react!</div>;
