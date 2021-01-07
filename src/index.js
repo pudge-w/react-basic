@@ -18,7 +18,8 @@ import ReactDOM from 'react-dom';
 // import App from './05-form/03-manyInput.jsx';
 // import App from './05-form/04-notControl.jsx';
 // import App from './05-form/05-file.jsx';
-import App from './06-todolist/App.jsx';
+// import App from './06-todolist/App.jsx';
+import App from './07-life-cycle/App.jsx';
 
 
 // const app = <div>hello react!</div>;
@@ -52,3 +53,8 @@ ReactDOM.render(
   <App />,  // 实例化
   document.querySelector('#root')
 )
+
+// 卸载节点
+// setTimeout(() => {
+//   ReactDOM.unmountComponentAtNode(document.querySelector('#root'));
+// }, 3000);
