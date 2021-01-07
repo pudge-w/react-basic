@@ -20,7 +20,9 @@ import ReactDOM from 'react-dom';
 // import App from './05-form/05-file.jsx';
 // import App from './06-todolist/App.jsx';
 // import App from './07-life-cycle/App.jsx';
-import App from './07-life-cycle/App2.jsx';
+// import App from './07-life-cycle/App2.jsx';
+// import App from './08-context/01-context-demo/App.jsx';
+import App from './08-context/02-cart/App.jsx';
 
 
 // const app = <div>hello react!</div>;
