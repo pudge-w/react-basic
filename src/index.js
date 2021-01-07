@@ -17,7 +17,8 @@ import ReactDOM from 'react-dom';
 // import App from './05-form/02-multiple.jsx';
 // import App from './05-form/03-manyInput.jsx';
 // import App from './05-form/04-notControl.jsx';
-import App from './05-form/05-file.jsx';
+// import App from './05-form/05-file.jsx';
+import App from './06-todolist/App.jsx';
 
 
 // const app = <div>hello react!</div>;
