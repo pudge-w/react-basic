@@ -19,7 +19,8 @@ import ReactDOM from 'react-dom';
 // import App from './05-form/04-notControl.jsx';
 // import App from './05-form/05-file.jsx';
 // import App from './06-todolist/App.jsx';
-import App from './07-life-cycle/App.jsx';
+// import App from './07-life-cycle/App.jsx';
+import App from './07-life-cycle/App2.jsx';
 
 
 // const app = <div>hello react!</div>;
