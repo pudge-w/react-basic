@@ -22,7 +22,9 @@ import ReactDOM from 'react-dom';
 // import App from './07-life-cycle/App.jsx';
 // import App from './07-life-cycle/App2.jsx';
 // import App from './08-context/01-context-demo/App.jsx';
-import App from './08-context/02-cart/App.jsx';
+// import App from './08-context/02-cart/App.jsx';
+// import App2 from './09-hoc/App.jsx';
+import App from './10-portal/App.jsx';
 
 
 // const app = <div>hello react!</div>;
@@ -53,7 +55,7 @@ ReactDOM.render(
   // app({
   //   name: '!!!'
   // }), // jsx语法
-  <App />,  // 实例化
+  <App/>,  // 实例化
   document.querySelector('#root')
 )
 
