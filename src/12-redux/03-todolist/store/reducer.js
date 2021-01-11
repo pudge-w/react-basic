@@ -1,10 +1,13 @@
+import { GET_DATA } from './actionTypes.js';
+
 const defaultState = {
   list: []
 }
 
 const reducer = (state = defaultState, action) => {
+  console.log(action);
   switch(action.type) {
-    case 'GET_DATA':
+    case GET_DATA:
       return {
         ...state,
         list: action.list

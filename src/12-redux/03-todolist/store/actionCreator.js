@@ -1,7 +1,9 @@
+import { GET_DATA } from './actionTypes.js';
+
 // 获取数据, (如果是异步，一般分成两步)
 const getDataAction = (list) => {
   return {
-    type: 'GET_DATA',
+    type: GET_DATA,
     list
   }
 }
