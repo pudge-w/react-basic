@@ -3,6 +3,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// 用于连接react和redux
+import { Provider } from 'react-redux';
+
+import store from './12-redux/03-todolist/store/index';
+
 // import App from './01-getting-start/01-nest.jsx';
 // import App from './01-getting-start/02-class-style.jsx';
 // import App from './01-getting-start/03-styled-component.jsx';
@@ -26,7 +31,28 @@ import ReactDOM from 'react-dom';
 // import App2 from './09-hoc/App.jsx';
 // import App from './10-portal/App.jsx';
 // import App from './11-redux-self/01-demo/App.jsx';
-import App from './11-redux-self/02-demo/App.jsx';
+// import App from './11-redux-self/02-demo/App.jsx';
+// import App from './12-redux/02-react-redux/App.jsx';
+import App from './12-redux/03-todolist/App.jsx';
+
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App/>
+  </Provider>,
+  document.querySelector('#root')
+)
+
+// const render = () => {
+//   ReactDOM.render(
+//     <App/>,
+//     document.querySelector('#root')
+//   )
+// };
+// render();
+// store.subscribe(() => {
+//   render();
+// })
 
 
 // const app = <div>hello react!</div>;
@@ -53,13 +79,13 @@ import App from './11-redux-self/02-demo/App.jsx';
 
 //! 组件  首字母大写的是组件
 //! 元素  首字母小写的是元素
-ReactDOM.render(
-  // app({
-  //   name: '!!!'
-  // }), // jsx语法
-  <App/>,  // 实例化
-  document.querySelector('#root')
-)
+// ReactDOM.render(
+//   // app({
+//   //   name: '!!!'
+//   // }), // jsx语法
+//   <App/>,  // 实例化
+//   document.querySelector('#root')
+// )
 
 // 卸载节点
 // setTimeout(() => {
