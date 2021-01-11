@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import hoc from './hoc.js';
 
+// 装饰器
+@hoc
 class App extends Component {
   render() {
     console.log(this)
@@ -25,4 +27,5 @@ class App extends Component {
 //   return <App msg="hello"></App>
 // }
 
-export default hoc(App);
+// export default hoc(App);
+export default App;

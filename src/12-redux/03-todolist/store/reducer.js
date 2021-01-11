@@ -1,10 +1,15 @@
 const defaultState = {
-  list: ['zhangsan', 'lisi']
+  list: []
 }
 
 const reducer = (state = defaultState, action) => {
   switch(action.type) {
-    case 'push':
+    case 'GET_DATA':
+      return {
+        ...state,
+        list: action.list
+      }
+    case 'PUSH_DATA':
       return {
         ...state,
         list: [
@@ -12,9 +17,9 @@ const reducer = (state = defaultState, action) => {
           action.task
         ]
       }
-    case 'delete':
-      let newList = state.list.filter((item) => {
-        return item !== action.task
+    case 'DELETE_DATA':
+      let newList = state.list.filter((item, index) => {
+        return index !== action.index
       })
       return {
         ...state,

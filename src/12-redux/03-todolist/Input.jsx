@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
+import { pushDataAction } from './store/actionCreator';
 
 import { connect } from 'react-redux';
 
 const mapDispatchToProps = dispatch => {
   return {
     push(value) {
-      dispatch({type: 'push', task: value})
+      // dispatch({type: 'push', task: value})
+      dispatch(pushDataAction(value))
     }
   }
 }
 
+@connect(null, mapDispatchToProps)
 class Input extends Component {
   state = {
     textValue: ''
@@ -24,6 +27,9 @@ class Input extends Component {
   handleKeyUp = e => {
     if (e.keyCode === 13 && this.state.textValue) {
       this.props.push(this.state.textValue)
+      this.setState({
+        textValue: ''
+      })
     }
   }
 
@@ -43,4 +49,4 @@ class Input extends Component {
   // }
 }
 
-export default connect(null, mapDispatchToProps)(Input);
+export default Input;
