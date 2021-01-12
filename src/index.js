@@ -3,10 +3,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// 用于连接react和redux
-import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 
-import store from './12-redux/03-todolist/store/index';
+// 用于连接react和redux
+// import { Provider } from 'react-redux';
+
+// import store from './12-redux/03-todolist/store/index';
 
 // import App from './01-getting-start/01-nest.jsx';
 // import App from './01-getting-start/02-class-style.jsx';
@@ -33,13 +35,19 @@ import store from './12-redux/03-todolist/store/index';
 // import App from './11-redux-self/01-demo/App.jsx';
 // import App from './11-redux-self/02-demo/App.jsx';
 // import App from './12-redux/02-react-redux/App.jsx';
-import App from './12-redux/03-todolist/App.jsx';
+// import App from './12-redux/03-todolist/App.jsx';
+// import App from './13-router/01-basic.jsx';
+// import App from './13-router/02-URL-Parameters.jsx';
+// import App from './13-router/03-next.jsx';
+import App from './13-router/04-render.jsx';
 
 
 ReactDOM.render(
-  <Provider store={store}>
+  // <Provider store={store}>
+  <BrowserRouter>
     <App/>
-  </Provider>,
+  </BrowserRouter>,
+  // </Provider>,
   document.querySelector('#root')
 )
 
