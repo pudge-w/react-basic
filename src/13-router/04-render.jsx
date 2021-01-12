@@ -11,13 +11,12 @@ class About extends Component {
   }
 }
 
-// const Mine = () => <div>mine</div>;
-class Mine extends Component {
-  render() {
-    console.log(this.props)
-    return <div>mine</div>
-  }
-}
+const Mine = () => <div>mine</div>;
+// class Mine extends Component {
+//   render() {
+//     return <div>mine</div>
+//   }
+// }
 
 class Render extends Component {
   render() {
@@ -39,8 +38,8 @@ class Render extends Component {
           {/* 直接在Router里面使用实例化标签，是可以使用类组件和函数组件 */}
           <Route path="/" exact component={Home}></Route>
           <Route path="/about" render={(props) => <About {...props}></About>}></Route>
-          {/* <Route path="/mine" children={Mine}></Route> */}
-          <Route path="/mine"><Mine></Mine></Route>
+          <Route path="/mine" children={Mine}></Route>
+          {/* <Route path="/mine"><Mine></Mine></Route> */}
         </Switch>
       </Router>
     );
