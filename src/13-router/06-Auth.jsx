@@ -20,6 +20,7 @@ class Login extends Component {
     localStorage.setItem('loginInfo', 2344);
     // 编程式导航
     history.push('/protected');
+    // history.go(-1);
   }
 
   render() {
@@ -35,9 +36,12 @@ class Login extends Component {
 class PrivateRoute extends Component {
   render() {
     return (
-      localStorage.getItem('loginInfo') ? 
-      <ProtectedPage /> : 
-      <Redirect from="/protected" to="/login"></Redirect>
+      <Route path={this.props.path} render={() => {
+        return localStorage.getItem('loginInfo') ? 
+          (this.props.children) : 
+          (<Redirect from={this.props.path} to="/login"></Redirect>)
+      }}>
+      </Route>
     )
   }
 }
@@ -56,9 +60,9 @@ class Auth extends Component {
             <PublicPage />
           </Route>
 
-          <Route path="/protected">
-            <PrivateRoute />
-          </Route>
+          <PrivateRoute path="/protected">
+            <ProtectedPage />
+          </PrivateRoute>
 
           <Route path="/login" component={Login}></Route>
         </Switch>
