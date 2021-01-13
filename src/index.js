@@ -41,9 +41,12 @@ import { BrowserRouter } from 'react-router-dom';
 // import App from './13-router/03-next.jsx';
 // import App from './13-router/04-render.jsx';
 // import App from './13-router/05-redirect.jsx';
-import App from './13-router/06-Auth.jsx';
+// import App from './13-router/06-Auth.jsx';
 // import App from './13-router/07-NavLink.jsx';
 // import App from './13-router/08-custom.jsx';
+// import App from './13-router/09-preventTransition.jsx';
+// import App from './13-router/10-Params.jsx';
+import App from './13-router/11.NotFound.jsx';
 
 
 ReactDOM.render(
