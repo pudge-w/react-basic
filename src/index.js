@@ -46,7 +46,11 @@ import { BrowserRouter } from 'react-router-dom';
 // import App from './13-router/08-custom.jsx';
 // import App from './13-router/09-preventTransition.jsx';
 // import App from './13-router/10-Params.jsx';
-import App from './13-router/11.NotFound.jsx';
+// import App from './13-router/11.NotFound.jsx';
+// import App from './13-router/12-Recursive.jsx';
+// import App from './13-router/13-sidebar.jsx';
+// import App from './13-router/14-Config.jsx';
+import App from './13-router/15-Modal.jsx';
 
 
 ReactDOM.render(
