@@ -3,7 +3,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { BrowserRouter } from 'react-router-dom';
+// import { BrowserRouter } from 'react-router-dom';
 
 // 用于连接react和redux
 // import { Provider } from 'react-redux';
@@ -50,14 +50,17 @@ import { BrowserRouter } from 'react-router-dom';
 // import App from './13-router/12-Recursive.jsx';
 // import App from './13-router/13-sidebar.jsx';
 // import App from './13-router/14-Config.jsx';
-import App from './13-router/15-Modal.jsx';
+// import App from './13-router/15-Modal.jsx';
+// import App from './13-router/16-router-demo/App.jsx';
+import Router from './13-router/16-router-demo/router/index.jsx'
 
 
 ReactDOM.render(
+  <Router />,
   // <Provider store={store}>
-  <BrowserRouter>
-    <App/>
-  </BrowserRouter>,
+  // <BrowserRouter>
+  //   <App/>
+  // </BrowserRouter>,
   // </Provider>,
   document.querySelector('#root')
 )
