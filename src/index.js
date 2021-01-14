@@ -6,9 +6,9 @@ import ReactDOM from 'react-dom';
 // import { BrowserRouter } from 'react-router-dom';
 
 // 用于连接react和redux
-import { Provider } from 'react-redux';
+// import { Provider } from 'react-redux';
 
-import store from './14-immutable/immutable-todolist/store/index.js';
+// import store from './14-immutable/immutable-todolist/store/index.js';
 
 // import App from './01-getting-start/01-nest.jsx';
 // import App from './01-getting-start/02-class-style.jsx';
@@ -54,16 +54,12 @@ import store from './14-immutable/immutable-todolist/store/index.js';
 // import App from './13-router/16-router-demo/App.jsx';
 // import Router from './13-router/16-router-demo/router/index.jsx'
 // import Router from './14-immutable/App.jsx';
-import App from './14-immutable/immutable-todolist/App.jsx';
+// import App from './14-immutable/immutable-todolist/App.jsx';
+import App from './15-lazy/02-suspense/App.jsx';
 
 
 ReactDOM.render(
-  // <Router />,
-  <Provider store={store}>
-  {/* // <BrowserRouter> */}
-    <App/>
-  {/* // </BrowserRouter>, */}
-  </Provider>,
+  <App/>,
   document.querySelector('#root')
 )
 
