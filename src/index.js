@@ -52,7 +52,8 @@ import ReactDOM from 'react-dom';
 // import App from './13-router/14-Config.jsx';
 // import App from './13-router/15-Modal.jsx';
 // import App from './13-router/16-router-demo/App.jsx';
-import Router from './13-router/16-router-demo/router/index.jsx'
+// import Router from './13-router/16-router-demo/router/index.jsx'
+import Router from './14-immutable/App.jsx';
 
 
 ReactDOM.render(
