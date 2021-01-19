@@ -23,28 +23,28 @@ const UseEffect = () => {
   //   console.log(123);
   // }, [list, count])
 
-  // useEffect(() => {
-  //   console.log(123)
-  //   return () => {
-  //     console.log('666')
-  //   }
-  // }, [])
-
-
-  const getData = () => {
-    return fetch('https://www.fastmock.site/mock/f6da2d51373e2d56be34e0119e611452/redux/api/list')
-      .then(response => response.json())
-      .then(res => {
-        return res
-      })
-  }
-
   useEffect(() => {
-    (async() => {
-      const res = await getData();
-      console.log(res);
-    })()
+    console.log(123)
+    return () => {
+      console.log('666')
+    }
   }, [])
+
+
+  // const getData = () => {
+  //   return fetch('https://www.fastmock.site/mock/f6da2d51373e2d56be34e0119e611452/redux/api/list')
+  //     .then(response => response.json())
+  //     .then(res => {
+  //       return res
+  //     })
+  // }
+
+  // useEffect(() => {
+  //   (async() => {
+  //     const res = await getData();
+  //     console.log(res);
+  //   })()
+  // }, [])
 
 
 

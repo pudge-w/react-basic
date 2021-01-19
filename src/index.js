@@ -58,7 +58,11 @@ import ReactDOM from 'react-dom';
 // import App from './15-lazy/02-suspense/App.jsx';
 // import App from './16-hooks/01-useState.jsx';
 // import App from './16-hooks/02-useEffect.jsx';
-import App from './16-hooks/03-useContext.jsx';
+// import App from './16-hooks/03-useContext.jsx';
+// import App from './16-hooks/04-useReducer.jsx';
+// import App from './16-hooks/05-useContext&useReducer.jsx';
+// import App from './16-hooks/06-useContent&useReducer2.jsx';
+import App from './16-hooks/07-useCallBack.jsx';
 
 
 ReactDOM.render(
