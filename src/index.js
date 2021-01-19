@@ -55,7 +55,10 @@ import ReactDOM from 'react-dom';
 // import Router from './13-router/16-router-demo/router/index.jsx'
 // import Router from './14-immutable/App.jsx';
 // import App from './14-immutable/immutable-todolist/App.jsx';
-import App from './15-lazy/02-suspense/App.jsx';
+// import App from './15-lazy/02-suspense/App.jsx';
+// import App from './16-hooks/01-useState.jsx';
+// import App from './16-hooks/02-useEffect.jsx';
+import App from './16-hooks/03-useContext.jsx';
 
 
 ReactDOM.render(
