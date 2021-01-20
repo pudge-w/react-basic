@@ -1,56 +1,35 @@
-import React, {useCallback, useState, useMemo, memo} from 'react';
+import React, {useCallback, useState, useMemo} from 'react';
 
-const Child1 = (props) => {
-  console.log(props)
-  return <div>child1</div>
-}
+const UseMemo = () => {
+  const [count, setCount] = useState(1);
+  const [num, setNum] = useState(99);
 
-const Child = memo(({a, b, onAdd}) => {
-  console.log('child render.')
+  const handleClick = useCallback(() => {
+    setCount(count => count + 1)
+  }, [])
 
-  const Child2 = useMemo(() => () => <Child1 a={a}></Child1>, [a]);
-  const Child3 = useMemo(() => () => {
-    console.log(123333)
-    return <Child1 a={b}></Child1>
-  }, [b]);
+  const handleClick2 = useCallback(() => {
+    setNum(num => num + 1)
+  }, [])
 
+  const sum = useMemo(() => {
+    console.log(7777)
+    let s = 0;
+    for (let i = 0; i < count * 100; i++) {
+      s += i
+    };
+    return s;
+  }, [count])
 
   return (
     <>
-      <h2>child</h2>
-      <Child2></Child2>
-      <Child3></Child3>
-      <button onClick={ onAdd }>add</button>
+      <div>{count}</div>
+      <div>{sum}</div>
+      <div>{num}</div>
+      <button onClick={handleClick}>btn</button>
+      <button onClick={handleClick2}>btn2</button>
     </>
-  )
-})
-
-const UseCallBack = () => {
-  // useCallback用于做记忆函数，缓存函数
-  console.log('parent render.')
-  const [count, setCount] = useState(0);
-  const [a, setA] = useState(3);
-  const [b] = useState(5);
-
-  const handleAdd = useCallback(() => {
-    console.log(123)
-  }, [])
-
-  // const handleAdd = () => {
-  //   console.log(123)
-  // }
-
-  const handleClick = () => {
-    setCount(count => count + 1)
-  }
-
-  return (
-    <div>
-      <p onClick={() => setA(7)}>{ count }</p>
-      <button onClick={ handleClick }>parent button</button>
-      <Child onAdd={ handleAdd } a={a} b={b}/>
-    </div>
   );
 }
 
-export default UseCallBack;
+export default UseMemo;
