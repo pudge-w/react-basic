@@ -65,8 +65,9 @@ const UseState = () => {
   const handleChange = () => {
     setList(list => {
       // 逻辑处理
-      let newList = ['a', 'd', 'c'];
-      return newList;
+      // let newList = ['a', 'd', 'c'];
+      // return newList;
+      return [...list, 'd', 'e']
     });
   }
 

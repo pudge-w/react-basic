@@ -62,7 +62,12 @@ import ReactDOM from 'react-dom';
 // import App from './16-hooks/04-useReducer.jsx';
 // import App from './16-hooks/05-useContext&useReducer.jsx';
 // import App from './16-hooks/06-useContent&useReducer2.jsx';
-import App from './16-hooks/07-useCallBack.jsx';
+// import App from './16-hooks/07-useCallBack.jsx';
+// import App from './16-hooks/08-useMemo.jsx';
+// import App from './16-hooks/09-Memoization.jsx';
+// import App from './16-hooks/10-useRef.jsx';
+import App from './16-hooks/11-useImperativeHandle.jsx';
+
 
 
 ReactDOM.render(
