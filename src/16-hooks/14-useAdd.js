@@ -11,9 +11,10 @@ const useAdd = () => {
 
   const handleKeyUp = useCallback((e) => {
     if (e.keyCode === 13 && textValue) {
-      setList(list => [...list, textValue])
+      setList(list => [...list, textValue]);
+      setTextValue('');
     }
-  }, [textValue, setList])
+  }, [textValue, setList,setTextValue])
 
   return [list, textValue, handleChange, handleKeyUp, deleteItem]
 }
