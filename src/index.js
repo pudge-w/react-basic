@@ -6,9 +6,11 @@ import ReactDOM from 'react-dom';
 // import { BrowserRouter } from 'react-router-dom';
 
 // 用于连接react和redux
-import { Provider } from 'react-redux';
+// import { Provider } from 'react-redux';
+import { Provider } from 'mobx-react';
 
-import store from './17-redux-saga/store/index';
+// import store from './17-redux-saga/store/index';
+import store from './18-mobx/store/index';
 
 // import App from './01-getting-start/01-nest.jsx';
 // import App from './01-getting-start/02-class-style.jsx';
@@ -69,7 +71,8 @@ import store from './17-redux-saga/store/index';
 // import App from './16-hooks/11-useImperativeHandle.jsx';
 // import App from './16-hooks/12-useLayoutEffect.jsx';
 // import App from './16-hooks/13-todolist.jsx';
-import App from './17-redux-saga/App.jsx';
+// import App from './17-redux-saga/App.jsx';
+import App from './18-mobx/App.jsx';
 
 
 
